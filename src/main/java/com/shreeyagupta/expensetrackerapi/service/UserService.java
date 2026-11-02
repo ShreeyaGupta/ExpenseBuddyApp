@@ -1,0 +1,17 @@
+package com.shreeyagupta.expensetrackerapi.service;
+
+import com.shreeyagupta.expensetrackerapi.entity.User;
+import com.shreeyagupta.expensetrackerapi.entity.UserModel;
+
+public interface UserService {
+
+	User createUser(UserModel user);
+	
+	User readUser();
+	
+	User updateUser(UserModel user);
+	
+	void deleteUser();
+	
+	User getLoggedInUser();
+}
